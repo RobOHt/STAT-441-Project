@@ -1,6 +1,7 @@
 # Project specific
 Reference/*
 .claude/
+data/raw/
 
 # Python
 __pycache__/
