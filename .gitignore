@@ -6,6 +6,7 @@ Reference/*
 data/raw/
 project_proposal.pdf
 project_proposal.md
+.claude/
 
 # Data files
 *.npz
@@ -16,20 +17,29 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+.venv/
 venv/
 ENV/
 env/
+.ipynb_checkpoints/
 *.egg-info/
 dist/
 build/
 
 # R
+.Rhistory
+.RData
+.Rproj.user/
 *.Rproj
 
 # OS
+.DS_Store
 Thumbs.db
 
 # IDEs
+.vscode/
+.idea/
 *.swp
 *~
 
