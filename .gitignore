@@ -1,6 +1,8 @@
+# Ignore all dotfiles and dotfolders
+.*
+
 # Project specific
 Reference/*
-.claude/
 data/raw/
 
 # Python
@@ -8,29 +10,20 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-.venv/
 venv/
 ENV/
 env/
-.ipynb_checkpoints/
 *.egg-info/
 dist/
 build/
 
 # R
-.Rhistory
-.RData
-.Rproj.user/
 *.Rproj
 
 # OS
-.DS_Store
 Thumbs.db
 
 # IDEs
-.vscode/
-.idea/
 *.swp
 *~
 
