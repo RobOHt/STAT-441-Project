@@ -1,9 +1,15 @@
 # STAT 441 Project
 
+## Team Members
+
+- Robin Zhong
+- Huiyi Hao
+- Nimrat Sandhu
+
 ## Data Description
 
 ### Data Source
-The dataset was collected as part of a hobby project completed during the summer of 2020, with the goal of building a simple self-driving vehicle from the ground up. Images were captured at 64x64 resolution from a Raspberry Pi Camera (PiCamera) mounted on a vehicle prototype navigating a track.
+The dataset was collected as part of Robin's hobby project completed during the summer of 2020, with the goal of building a simple self-driving vehicle from the ground up. Images were captured at 64x64 resolution from a Raspberry Pi Camera (PiCamera) mounted on a vehicle prototype navigating a track.
 
 Data collection was performed autonomously using a non-ML algorithm based on t-tests of pixel intensity differences between bottom-left and bottom-right image regions. This statistical method reliably detected track edges and generated steering commands, allowing the vehicle to autopilot the track while simultaneously collecting image-label pairs. The algorithm determined steering direction by comparing pixel intensities at the bottom corners of each frame to identify when the vehicle approached track boundaries, and these automated steering decisions became the labels for the collected images.
 
