@@ -4,6 +4,7 @@
 # Project specific
 Reference/*
 data/raw/
+project_proposal.pdf
 
 # Python
 __pycache__/
