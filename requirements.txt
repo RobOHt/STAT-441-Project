@@ -1,0 +1,17 @@
+# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Computer vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Deep learning
+tensorflow>=2.13.0
+
+# Raspberry Pi camera (optional - only needed for hardware deployment)
+# picamera>=1.13
+
+# Jupyter support (if needed)
+# jupyter>=1.0.0
+# ipykernel>=6.25.0
