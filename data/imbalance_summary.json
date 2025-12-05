@@ -1,0 +1,52 @@
+{
+  "original_distribution": {
+    "left": 1033,
+    "forward": 4252,
+    "right": 655,
+    "total": 5940,
+    "imbalance_ratio": 6.491603053435115
+  },
+  "methods": {
+    "class_weights": {
+      "description": "Inverse frequency weights for loss function",
+      "file": "class_weights.npy",
+      "changes_dataset": false,
+      "train_size": 5940,
+      "weights": {
+        "0": 1.9167473378509197,
+        "1": 0.4656632173095014,
+        "2": 3.0229007633587788
+      },
+      "recommendation": "Start here - simplest and most effective"
+    },
+    "temporal_interpolation": {
+      "description": "Temporal frame interpolation between consecutive frames",
+      "file": "splits_temporal_tfi.npz",
+      "changes_dataset": true,
+      "train_size": 12756,
+      "distribution": {
+        "0": 4252,
+        "-1": 4252,
+        "1": 4252
+      },
+      "recommendation": "Best for sequential image data - creates realistic frames"
+    },
+    "random_oversample": {
+      "description": "Random oversampling (duplication) of minority class",
+      "file": "splits_temporal_oversample.npz",
+      "changes_dataset": true,
+      "train_size": 12756,
+      "distribution": {
+        "0": 4252,
+        "-1": 4252,
+        "1": 4252
+      },
+      "recommendation": "Simple backup if TFI not needed"
+    }
+  },
+  "usage_example": {
+    "class_weights": "model.fit(X, y, class_weight=np.load(\"class_weights.npy\").item(), ...)",
+    "tfi": "data = np.load(\"splits_temporal_tfi.npz\"); X_train = data[\"X_train\"]",
+    "oversample": "data = np.load(\"splits_temporal_oversample.npz\"); X_train = data[\"X_train\"]"
+  }
+}
