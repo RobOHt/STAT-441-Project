@@ -7,6 +7,10 @@ data/raw/
 project_proposal.pdf
 project_proposal.md
 
+# Data files
+*.npz
+*.npy
+
 # Python
 __pycache__/
 *.py[cod]
