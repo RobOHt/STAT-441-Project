@@ -7,7 +7,8 @@ opencv-python>=4.8.0
 Pillow>=10.0.0
 
 # Deep learning
-tensorflow>=2.13.0
+# TensorFlow 2.14.0 for CUDA 11.8 compatibility
+tensorflow==2.14.0
 
 # Class imbalance handling
 # Note: These versions must be compatible
